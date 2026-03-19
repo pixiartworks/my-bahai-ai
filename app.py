@@ -1,6 +1,27 @@
 import streamlit as st
 import google.generativeai as genai
 
+# --- HIDE STREAMLIT BRANDING ---
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+st.markdown("""
+    <style>
+    .stButton>button {
+        border-radius: 20px;
+        border: 1px solid #d3ad7f; /* A nice gold/sand color */
+        background-color: #ffffff;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+
 # 1. Setup -  key from Google AI Studio
 genai.configure(api_key="AIzaSyD9s8HMIQFMMVLlLwGQWsh-d-hrdTy9_8s")
 
