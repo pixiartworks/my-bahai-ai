@@ -8,6 +8,10 @@ genai.configure(api_key=st.secrets["GEMINI_KEY"])
 st.set_page_config(page_title="Bahá'í Faith Assistant", page_icon="✴")
 st.title("Bahá'í Faith Information AI")
 st.caption(" ")
+st.set_page_config(
+    page_title="Bahá'í Faith Assistant", 
+    page_icon="https://www.bahai.org/favicon.ico" 
+)
 
 # 2. System Instructions
 SYSTEM_PROMPT = """
