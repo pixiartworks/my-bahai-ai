@@ -48,3 +48,22 @@ if prompt := st.chat_input("Ask about Bahá'í principles, history, or writings.
         st.markdown(response.text)
         
     st.session_state.messages.append({"role": "assistant", "content": response.text})
+
+
+
+# 5 --- SIDEBAR SECTION ---
+with st.sidebar:
+    st.image("https://www.bahai.org/images/logo-footer.png", width=100) # Optional logo
+    st.header("Resources")
+    
+    # Official Website Button
+    st.link_button("Visit Bahai.org", "https://www.bahai.org", use_container_width=True)
+    
+    # Reference Library Button
+    st.link_button("Reference Library", "https://www.bahai.org/library/", use_container_width=True)
+    
+    st.divider() # A thin line to separate sections
+    
+    st.subheader("About this AI")
+    st.info("This assistant is designed to help you explore the Bahá'í Sacred Writings using Gemini 2.5 Flash.")
+# --- END SIDEBAR SECTION ---
