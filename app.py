@@ -57,7 +57,7 @@ if prompt := st.chat_input("Ask about Bahá'í principles, history, or writings.
 
 # 5 --- SIDEBAR SECTION ---
 with st.sidebar:
-    st.image("https://file.bahai.media/3/39/NinePointedStar.png", width=100)
+    st.image("https://file.bahai.media/3/39/NinePointedStar.png", width=60)
     st.header("Resources")
     
     st.link_button("Visit Bahai.org", "https://www.bahai.org", use_container_width=True)
