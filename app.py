@@ -53,7 +53,7 @@ if prompt := st.chat_input("Ask about Bahá'í principles, history, or writings.
 
 # 5 --- SIDEBAR SECTION ---
 with st.sidebar:
-    st.image("https://en.wikipedia.org/wiki/Baháʼí_symbols#/media/File:Bahai_star.svg", width=100)
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Bahai_star.svg/1280px-Bahai_star.svg.png", width=100)
     st.header("Resources")
     
     st.link_button("Visit Bahai.org", "https://www.bahai.org", use_container_width=True)
