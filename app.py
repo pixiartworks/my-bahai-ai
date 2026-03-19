@@ -5,7 +5,7 @@ import google.generativeai as genai
 genai.configure(api_key="AIzaSyD9s8HMIQFMMVLlLwGQWsh-d-hrdTy9_8s")
 
 st.set_page_config(page_title="Bahá'í Faith Assistant", page_icon="")
-st.title("🕊️ Bahá'í Faith Information AI")
+st.title("Bahá'í Faith Information AI")
 st.caption(" ")
 
 # 2. System Instructions
@@ -65,4 +65,28 @@ with st.sidebar:
     
     st.subheader("About this AI")
     st.info("This assistant is designed to help you explore about the Bahá'í Faith. It is not offical and may make mistakes.")
+
+
+
+st.divider()
+    st.subheader("Suggested Topics")
+
+    # This creates the suggested questions
+    suggestions = [
+        "What is the 'Oneness of Humanity'?",
+        "Tell me about the life of Bahá'u'lláh.",
+        "What are the Bahá'í House of Worship?",
+        "How do Bahá'ís view science and religion?"
+    ]
+
+    # This logic makes the buttons actually "type" the question
+    for question in suggestions:
+        if st.button(question, use_container_width=True):
+            st.session_state.messages.append({"role": "user", "content": question})
+            # This line forces the app to rerun and process the new question
+            st.rerun()
+            
 # --- END SIDEBAR SECTION ---
+
+
+
