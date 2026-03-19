@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 
 # 1. Setup -  key from Google AI Studio
-genai.configure(api_key="AIzaSyD9s8HMIQFMMVLlLwGQWsh-d-hrdTy9_8s")
+genai.configure(api_key=st.secrets["GEMINI_KEY"])
 
 st.set_page_config(page_title="Bahá'í Faith Assistant", page_icon="")
 st.title("Bahá'í Faith Information AI")
