@@ -10,7 +10,7 @@ st.title("Bahá'í Faith Information AI")
 st.caption(" ")
 st.set_page_config(
     page_title="Bahá'í Faith Assistant", 
-    page_icon="https://www.bahai.org/favicon.ico" 
+    page_icon="https://file.bahai.media/3/39/NinePointedStar.png" 
 )
 
 # 2. System Instructions
