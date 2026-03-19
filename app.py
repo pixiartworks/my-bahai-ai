@@ -8,6 +8,27 @@ st.set_page_config(page_title="Bahá'í Faith Assistant", page_icon="")
 st.title("Bahá'í Faith Information AI")
 st.caption(" ")
 
+# --- HIDE STREAMLIT BRANDING ---
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+st.markdown("""
+    <style>
+    .stButton>button {
+        border-radius: 20px;
+        border: 1px solid #d3ad7f; /* A nice gold/sand color */
+        background-color: #ffffff;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+
+
 # 2. System Instructions
 SYSTEM_PROMPT = """
 You are a respectful, scholarly, and helpful assistant dedicated to providing 
