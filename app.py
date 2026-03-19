@@ -52,26 +52,16 @@ if prompt := st.chat_input("Ask about Bahá'í principles, history, or writings.
 
 # 5 --- SIDEBAR SECTION ---
 with st.sidebar:
-    st.image("https://file.bahai.media/3/39/NinePointedStar.png", width=100) # Optional logo
+    st.image("https://www.bahai.org/images/logo-footer.png", width=100)
     st.header("Resources")
     
-    # Official Website Button
     st.link_button("Visit Bahai.org", "https://www.bahai.org", use_container_width=True)
-    
-    # Reference Library Button
     st.link_button("Reference Library", "https://www.bahai.org/library/", use_container_width=True)
     
-    st.divider() # A thin line to separate sections
-    
-    st.subheader("About this AI")
-    st.info("This assistant is designed to help you explore about the Bahá'í Faith. It is not offical and may make mistakes.")
-
-
-
-st.divider()
+    st.divider()
+    # MAKE SURE THE LINE BELOW IS ALIGNED WITH THE ONES ABOVE!
     st.subheader("Suggested Topics")
 
-    # This creates the suggested questions
     suggestions = [
         "What is the 'Oneness of Humanity'?",
         "Tell me about the life of Bahá'u'lláh.",
@@ -79,14 +69,10 @@ st.divider()
         "How do Bahá'ís view science and religion?"
     ]
 
-    # This logic makes the buttons actually "type" the question
     for question in suggestions:
         if st.button(question, use_container_width=True):
             st.session_state.messages.append({"role": "user", "content": question})
-            # This line forces the app to rerun and process the new question
             st.rerun()
-            
 # --- END SIDEBAR SECTION ---
-
 
 
