@@ -8,27 +8,6 @@ st.set_page_config(page_title="Bahá'í Faith Assistant", page_icon="")
 st.title("Bahá'í Faith Information AI")
 st.caption(" ")
 
-# --- HIDE STREAMLIT BRANDING ---
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
-st.markdown("""
-    <style>
-    .stButton>button {
-        border-radius: 20px;
-        border: 1px solid #d3ad7f; /* A nice gold/sand color */
-        background-color: #ffffff;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-
-
 # 2. System Instructions
 SYSTEM_PROMPT = """
 You are a respectful, scholarly, and helpful assistant dedicated to providing 
@@ -73,7 +52,7 @@ if prompt := st.chat_input("Ask about Bahá'í principles, history, or writings.
 
 # 5 --- SIDEBAR SECTION ---
 with st.sidebar:
-    st.image("https://www.bahai.org/images/logo-footer.png", width=100) # Optional logo
+    st.image("https://file.bahai.media/3/39/NinePointedStar.png", width=100) # Optional logo
     st.header("Resources")
     
     # Official Website Button
