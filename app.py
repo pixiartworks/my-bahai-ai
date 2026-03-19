@@ -64,5 +64,5 @@ with st.sidebar:
     st.divider() # A thin line to separate sections
     
     st.subheader("About this AI")
-    st.info("This assistant is designed to help you explore the Bahá'í Sacred Writings using Gemini 2.5 Flash.")
+    st.info("This assistant is designed to help you explore about the Bahá'í Faith. It is not offical and may make mistakes.")
 # --- END SIDEBAR SECTION ---
